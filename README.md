@@ -1,8 +1,10 @@
 # 4 KB-ROM-Memory-with-Read-and-Write-Operations
-Aim
+AIM:
+
 To design and simulate a 4KB ROM memory with read and write operations using Verilog HDL and verify the functionality through a testbench in the Vivado 2023.1 simulation environment.
 
-Apparatus Required
+APPARATUS REQUIRED:
+
 Vivado 2023.1 or equivalent Verilog simulation tool.
 Computer system with a suitable operating system.
 Procedure
@@ -27,7 +29,11 @@ Analyze the waveform to verify that the memory read and write operations work as
 Save and Document Results:
 
 Capture the waveform and include the simulation results in the final report.
-Verilog Code for 4KB ROM Memory with Read and Write Operations
+
+
+**Verilog Code for 4KB ROM Memory with Read and Write Operations**
+
+
 In this design, we will implement a 4KB ROM. Since ROM is typically read-only, we will simulate the behavior as if it's writable, but in actual hardware, ROM is typically pre-programmed.
 
 4KB = 4096 Bytes = 4096 x 8 bits
@@ -56,8 +62,13 @@ module rom_memory (
     end
 endmodule
 
+OUTPUT:
+![OUTPUT_ROM](https://github.com/user-attachments/assets/d6fb466b-2f57-44ef-a307-18496dc11051)
 
-Testbench for 4KB ROM Memory
+
+
+
+TESTBENCH FOR 4KB ROM MEMORY:
 
 // rom_memory_tb.v
 `timescale 1ns / 1ps
@@ -117,6 +128,9 @@ module rom_memory_tb;
 
 endmodule
 
+OUTPUT:
+
+![TB_ROM](https://github.com/user-attachments/assets/810244c3-c933-402f-9b01-f0fc0a842354)
 
 Conclusion
 In this experiment, a 4KB ROM memory with read and write operations was designed and successfully simulated using Verilog HDL. The testbench verified both the write and read functionalities by simulating the memory operations and observing the output waveforms. The experiment demonstrates how to implement memory operations in Verilog, effectively modeling both the reading and writing processes for ROM.
