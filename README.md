@@ -1,4 +1,6 @@
-# 4 KB-ROM-Memory-with-Read-and-Write-Operations
+# Write the Verilog HDL code for 4kb RAM, 8x8 
+ROM, FIFO memory to read and write operation and 
+verify with testbench.
 
 ## AIM:
 
