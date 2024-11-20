@@ -42,7 +42,9 @@ The address width for 4KB memory is 12 bits (2^12 = 4096).
 ## VERILOG CODE FOR 4KB ROM WITH READ AND WRITE OPERATIONS:
 
 // rom_memory.v
+
 module rom_memory (
+
     input wire clk,
     input wire write_enable,   // Signal to enable write operation
     input wire [11:0] address, // 12-bit address for 4KB memory
@@ -62,6 +64,7 @@ module rom_memory (
         data_out <= rom[address];
     end
 endmodule
+
 
 ## OUTPUT:
 
